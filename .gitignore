@@ -96,10 +96,15 @@ ENV/
 .ropeproject
 .cot
 .cot/
-.gitignore
 .idea
 .idea/cotacoes.iml
 .idea/misc.xml
 .idea/modules.xml
 .idea/workspace.xml
+.DS_Store
+.env
+*.sqlite3
+*pyc
+__pycache__
+.gitignore
 
