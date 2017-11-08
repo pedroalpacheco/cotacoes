@@ -13,7 +13,6 @@ class ScrapyMoedasSqlPipeline(object):
             'insert into dolar(compra, venda, data) values (:compra, :venda, :data)',
             item
         )
-        # spider.log('------> ITEM CAPTURADO -----')
         self.conn.commit()
         return item
 
@@ -29,7 +28,7 @@ class ScrapyMoedasSqlPipeline(object):
             )
 
     def open_spider(self, spider):
-        self.conn = sqlite3.connect('db.sqlite3')
+        self.conn = sqlite3.connect('../db.sqlite3')
         self.create_table()
 
     def close_spider(self):
