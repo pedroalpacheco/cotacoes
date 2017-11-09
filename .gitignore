@@ -107,4 +107,5 @@ ENV/
 *pyc
 __pycache__
 .gitignore
+db.sqlite3
 

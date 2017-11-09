@@ -22,11 +22,11 @@ class DjangoMigrations(models.Model):
 
 
 class Dolar(models.Model):
-    #id = models.IntegerField(primary_key=True, blank=True, null=True)  # AutoField?
     id = models.IntegerField(primary_key=True, blank=True, null=False)  # AutoField?
     compra = models.TextField(blank=True, null=True)
     venda = models.TextField(blank=True, null=True)
     data = models.TextField(blank=True, null=True)
+    #hora = models.TextField(blank=True, null=False)
 
     class Meta:
         managed = False

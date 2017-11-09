@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import  Dolar
+from .models import Dolar
 
 
 class DolarAdmin(admin.ModelAdmin):
