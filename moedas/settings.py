@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+#Alterado devido a problemas em integrar tabela "dolar no banco de dados postgree- ver solução depois"
 #default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
 #DATABASES = {
