@@ -15,8 +15,6 @@ class HomeTest(TestCase):
         response = self.client.get('/')
         self.assertTemplateUsed(response, 'index.html')
 
-
-
-#def test_dolar(self):
-#    """Mostra a cotacao do dolar"""
-#    self.assertContains(self.response, 'R$ 3,50')
+    def test_dolar(self):
+        """Mostra a cotacao do dolar"""
+        self.assertContains(self.response, 'R$ 3,50')
