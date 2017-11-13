@@ -34,12 +34,12 @@
 
           <div class="inner cover">
             <h1 class="cover-heading">Cotações</h1>
-
-            <p class="lead">Data:10/11/2017</p>
-            <p class="lead">Cotação dolar compra: R$ 3,2655</p>
-            <p class="lead">Cotação dolar venda: R$ 3,2661</p>
+            {% for dlr in dolares %}
+            <p class="lead">Data:{{dlr.data}}</p>
+            <p class="lead">Cotação dolar compra: R$ {{dlr.compra}}</p>
+            <p class="lead">Cotação dolar venda: R$ {{dlr.venda}}</p>
             <p class="lead">
-
+              {% endfor %}
 
               <a href="#" class="btn btn-lg btn-secondary">Mais informações</a>
             </p>
