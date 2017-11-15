@@ -9,6 +9,13 @@ import sqlite3
 
 class ScrapyMoedasSqlPipeline(object):
     def process_item(self, item, spider):
+        item.save()
+        #return item
+
+
+
+    """
+    def process_item(self, item, spider):
         self.conn.execute(
             'insert into dolar(compra, venda, data) values (:compra, :venda, :data)',
             item
@@ -33,3 +40,4 @@ class ScrapyMoedasSqlPipeline(object):
 
     def close_spider(self):
         self.conn.close()
+    """

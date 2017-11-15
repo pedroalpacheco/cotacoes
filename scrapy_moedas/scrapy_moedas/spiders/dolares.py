@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
-
+#from moedas.scrapy_moedas.scrapy_moedas.items import Dolar
+from scrapy_moedas.items import ScrapyMoedasItem
 
 class DolarSpider(scrapy.Spider):
     name = "dolares"

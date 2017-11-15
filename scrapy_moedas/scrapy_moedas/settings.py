@@ -9,6 +9,20 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
+
+import sys
+#sys.path.append('~/PycharmProjects/cotacoes/moedas')
+sys.path.append('~/PycharmProjects/cotacoes/moedas')
+#sys.path.insert(0, '/cotacoes/moedas')
+#sys.path.insert(0, '~/PycharmProjects/cotacoes')
+import os
+os.environ['DJANGO_SETTINGS_MODULE'] = 'moedas.settings'
+import django
+
+django.setup()
+
+#######
+
 BOT_NAME = 'scrapy_moedas'
 
 SPIDER_MODULES = ['scrapy_moedas.spiders']
