@@ -8,6 +8,7 @@
 import scrapy
 #from scrapy.contrib.djangoitem import DjangoItem
 from scrapy_djangoitem import DjangoItem
+
 #from scrapy import Field
 from moedas.core.models import Dolar
 

@@ -35,9 +35,9 @@
           <div class="inner cover">
             <h1 class="cover-heading">Cotações</h1>
 
-            <p class="lead">Data:{{dolares.data}}</p>
-            <p class="lead">Cotação dolar compra: R$ {{dolares.compra}}</p>
-            <p class="lead">Cotação dolar venda: R$ {{dolares.venda}}</p>
+            <p class="lead">Data:10/11/2017</p>
+            <p class="lead">Cotação dolar compra: R$ 3,2655</p>
+            <p class="lead">Cotação dolar venda: R$ 3,2661</p>
             <p class="lead">
 
 

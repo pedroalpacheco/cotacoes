@@ -5,14 +5,27 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import sqlite3
+from scrapy_moedas.items import ScrapyMoedasItem
+
 
 
 class ScrapyMoedasSqlPipeline(object):
     def process_item(self, item, spider):
         item.save()
-        #return item
+        return item
 
 
+
+    """
+    def process_item(self, item, spider):
+        p = ScrapyMoedasItem()
+        p['compra'] = 'compra'
+        p['venda'] = 'venda'
+        p['data'] = 'data'
+        p.save()
+
+        return p
+"""
 
     """
     def process_item(self, item, spider):
