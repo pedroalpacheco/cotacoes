@@ -12,7 +12,7 @@ from django.db import models
 
 class Dolar(models.Model):
     #id = models.IntegerField(primary_key=True, blank=True, null=False)  # AutoField?
-    auto_increment_id = models.AutoField(primary_key=True)
+    #auto_increment_id = models.AutoField(primary_key=True)
     compra = models.TextField(blank=True, null=True)
     venda = models.TextField(blank=True, null=True)
     data = models.TextField(blank=True, null=True)
