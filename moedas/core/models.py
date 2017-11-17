@@ -10,23 +10,11 @@ from __future__ import unicode_literals
 from django.db import models
 
 
-class DjangoMigrations(models.Model):
-    id = models.IntegerField(primary_key=True)  # AutoField?
-    app = models.CharField(max_length=255)
-    name = models.CharField(max_length=255)
-    applied = models.DateTimeField()
-
-    class Meta:
-        managed = False
-        db_table = 'django_migrations'
-
-
 class Dolar(models.Model):
     id = models.IntegerField(primary_key=True, blank=True, null=False)  # AutoField?
     compra = models.TextField(blank=True, null=True)
     venda = models.TextField(blank=True, null=True)
     data = models.TextField(blank=True, null=True)
-    #hora = models.TextField(blank=True, null=False)
 
     class Meta:
         managed = False
