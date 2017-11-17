@@ -16,6 +16,6 @@ class Dolar(models.Model):
     venda = models.TextField(blank=True, null=True)
     data = models.TextField(blank=True, null=True)
 
-    class Meta:
-        managed = False
-        db_table = 'dolar'
+    #class Meta:
+     #   managed = False
+      #  db_table = 'dolar'
