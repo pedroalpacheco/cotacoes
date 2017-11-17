@@ -12,7 +12,7 @@
 
 import sys
 #sys.path.append('~/PycharmProjects/cotacoes/moedas')
-sys.path.append('~/PycharmProjects/cotacoes')
+sys.path.append('../')
 #sys.path.insert(0, '/cotacoes/moedas')
 #sys.path.insert(0, '~/PycharmProjects/cotacoes')
 import os
