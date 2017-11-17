@@ -108,4 +108,5 @@ ENV/
 __pycache__
 .gitignore
 db.sqlite3
+migrations/
 
