@@ -1,0 +1,13 @@
+PROBLEMA DE CRIAÇÃO DE TABELA ONDE É ARMAZENADO SCRAPY
+
+-Sintoma:
+Na app local funciona tudo perfeitamente, no heroku da problema em que não é criada a base core_dolar(postgre);
+Observer o numero de tabelas no painel do heroku
+
+-Solução temporária:
+Exclusão da base no heroku "db.sqlite3";
+Exclusão da base no heroku no painel;
+Exclusão dos "migrations/*";
+Realizado o makemigrations e migrations no heroku;
+
+Possíveis problemas de configuração do deploy "local" > "Heroku"
