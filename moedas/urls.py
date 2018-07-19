@@ -21,6 +21,6 @@ from moedas.core.views import home, historico
 
 urlpatterns = [
     url(r'^$', home, name='home'),
-    url(r'^hist/', historico, name='historico'),
+    #url(r'^hist/', historico, name='historico'),
     url(r'^admin/', include(admin.site.urls)),
 ]

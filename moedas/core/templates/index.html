@@ -25,7 +25,7 @@
             <div class="inner">
                 <nav class="nav nav-masthead">
                     <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="hist/">Historico</a>
+                    <a class="nav-link" href="#">Historico</a>
                     <a class="nav-link" href="#">Contato</a>
                 </nav>
             </div>
@@ -40,7 +40,54 @@
             <p class="lead">
 
 
-              <a href="#" class="btn btn-lg btn-secondary">Mais informações</a>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  </head>
+
+
+  <canvas id="productsChart" width="300" height="300" ></canvas>
+
+    <script>
+    var ctx = document.getElementById("productsChart");
+
+    var productsChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["10/07/2018", "11/07/2018", "12/07/2018", "13/07/2018", "14/07/2018", "15/07/2018", "16/07/2018", "17/07/2018", "18/07/2018", "19/07/2018"],
+            datasets: [{
+                label: 'Dolar Venda',
+                data: [3.8474, 3.8671, 3.8579, 3.8745, 3.8745, 3.8745, 3.8564, 3.8417, 3.8452,3.8692],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+
+
             </p>
           </div>
 
