@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from moedas.core.views import home
+from moedas.core.views import home, historico
 
 
 
 urlpatterns = [
     url(r'^$', home, name='home'),
+    url(r'^hist/', historico, name='historico'),
     url(r'^admin/', include(admin.site.urls)),
 ]
