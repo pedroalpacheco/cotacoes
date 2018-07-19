@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from moedas.core.views import home, historico
+from moedas.core.views import home
 
 
 
